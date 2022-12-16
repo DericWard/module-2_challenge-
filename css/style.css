@@ -2,6 +2,14 @@
   box-sizing: border-box;
 }
 
+h1 span {
+  background-color: aqua;
+}
+
+h1 {
+  background-color: dimgray;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -22,13 +30,14 @@ body {
   align-items: flex-end;
 }
 
+
 img {
   border-radius: 4px;
   width: 250px;
 }
 
 .portfolio-item-1 {
-  background-image: url(../images/02-portfolio-1.jpg);
+     background-image: url(../images/02-portfolio-1.jpg);
 }
 
 .portfolio-item-2 {
@@ -58,11 +67,12 @@ img {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  /* flex-basis: calc(50% -1em); */
+  flex-basis: calc(50% -1em);
   margin: .5em;
-  min-height: 500px;
+  min-height: 150px;
   min-width: 500px;
-  padding: 0 0 20px 0;
+  /* padding: 0 0 20px 10px; */
+  padding-bottom: 20px;
   background-size: 175%;
   background-repeat: no-repeat;
 }
@@ -71,6 +81,12 @@ img {
   background-color: lightgreen;
   padding: 10px;
 }
+
+.flex-item:first-child {
+  min-height: 300px;
+  flex-basis: 80%;
+}
+
 
 .flex-item h3 {
   font-size: 1.6rem;
