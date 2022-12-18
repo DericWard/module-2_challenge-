@@ -68,7 +68,7 @@ body {
 
 .page-section {
   display: grid;
-  grid-template-columns: 400px 1fr;
+  grid-template-columns: 1fr 4fr;
   margin: 50px 0;
 }
 
@@ -128,8 +128,7 @@ img {
   flex-basis: calc(50% -1em);
   margin: .5em;
   min-height: 150px;
-  min-width: 500px;
-  /* padding: 0 0 20px 10px; */
+  min-width: 600px;
   padding-bottom: 20px;
   background-size: 175%;
   background-repeat: no-repeat;
@@ -141,7 +140,7 @@ img {
 }
 
 .flex-item:first-child {
-  min-height: 300px;
+  min-height: 400px;
   flex-basis: 80%;
 }
 
