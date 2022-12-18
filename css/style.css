@@ -95,23 +95,23 @@ img {
 }
 
 .portfolio-item-1 {
-     background-image: url(../images/02-portfolio-1.jpg);
+     background-image: url(../images/horiseon.PNG);
 }
 
 .portfolio-item-2 {
-  background-image: url(../images/02-portfolio-2.jpg);
+  background-image: url(../images/git-commands.PNG);
 }
 
 .portfolio-item-3 {
-  background-image: url(../images/02-portfolio-3.jpg);
+  background-image: url(../images/basic-bio.PNG);
 }
 
 .portfolio-item-4 {
-  background-image: url(../images/02-portfolio-4.jpg);
+  background-image: url(../images/prework-study-guide.PNG);
 }
 
 .portfolio-item-5 {
-  background-image: url(../images/02-run-buddy.jpg);
+  background-image: url(../images/flexbox-testing.PNG);
 }
 
 .flex-container {
@@ -135,7 +135,7 @@ img {
 }
 
 .flex-item div {
-  background-color: lightgreen;
+  background-color: aqua;
   padding: 10px;
 }
 
