@@ -121,6 +121,10 @@ img {
   flex-wrap: wrap;
 }
 
+.flex-container p {
+  font-size: small;
+}
+
 .flex-item {
   display: flex;
   flex-direction: row;
@@ -129,7 +133,7 @@ img {
   margin: .5em;
   min-height: 150px;
   min-width: 600px;
-  padding-bottom: 20px;
+  padding: 0 20px 10px 10px;
   background-size: 175%;
   background-repeat: no-repeat;
 }
