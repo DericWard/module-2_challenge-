@@ -22,6 +22,10 @@ ul {
   background-color: dimgray;
 }
 
+nav img {
+  width: 80px;
+}
+
 .nav-name {
   margin-right: auto;
   padding: 10px;
@@ -36,8 +40,12 @@ li a {
 
 h1 span {
   background-color: aqua;
-  padding: 5px;
+  padding: 10px;
   border-radius: 10px;
+}
+
+.nav-name {
+  margin-top: 10px;
 }
 
 .hero-banner {
