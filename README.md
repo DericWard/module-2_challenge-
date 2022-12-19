@@ -10,4 +10,7 @@ Both the HTML and CSS is commented to aid modification in the future.
 ## This project satisfied the requirement for Assignment 2 of the Front End Developer Bootcamp run by edX.
 
 ## Install: To install this app please clone the following repo:
+https://github.com/DericWard/module-2_challenge-
+
+
 
