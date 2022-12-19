@@ -28,6 +28,7 @@ ul {
 /* profile pic image */
 nav img {
   width: 80px;
+  padding: var(--pxVar);
 }
 /* name on navbar */
 .nav-name {
