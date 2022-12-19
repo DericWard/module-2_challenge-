@@ -1,6 +1,10 @@
 * {
   box-sizing: border-box;
 }
+/* CSS Variable */
+:root {
+  --pxVar: 10px;
+}
 
 h1,
 h2,
@@ -14,37 +18,37 @@ h6 {
 p {
   margin: 0;
 }
-
+/* Unordered List nav links */
 ul {
   display: flex;
   list-style-type: none;
   margin: 0;
   background-color: dimgray;
 }
-
+/* profile pic image */
 nav img {
   width: 80px;
 }
-
+/* name on navbar */
 .nav-name {
-  margin-top: 10px;
+  margin-top: var(--pxVar);
   margin-right: auto;
-  padding: 10px;
+  padding: var(--pxVar);
 }
-
+/* anchor tags of the list elements */
 li a {
   font-size: 150%;
   float: right;
   padding: 14px 16px;
   color: aqua;
 }
-
+/* putting a background on the navbar name */
 h1 span {
   background-color: aqua;
-  padding: 10px;
-  border-radius: 10px;
+  padding: var(--pxVar);
+  border-radius: var(--pxVar);
 }
-
+/* hero splash image */
 .hero-banner {
   background-image: url(../images/02-hero-bg.jpg);
   background-position: center;
@@ -55,13 +59,13 @@ h1 span {
   align-items: flex-end;
   color: black;
 }
-
+/* text on/over the splash image */
 .hero-subtitle {
   font-size: 175%;
   background-color: aqua;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 10px;
+  padding: var(--pxVar);
+  margin: var(--pxVar);
+  border-radius: var(--pxVar);
 }
 
 body {
@@ -70,35 +74,30 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
 }
-
+/* sections of the page with the main content - text and clickable images */ 
 .page-section {
   display: grid;
   grid-template-columns: 1fr 4fr;
   margin: 50px 0;
 }
-
+/* titles of the main content sections */
 .page-section h2 {
   border-right: 5px solid aqua;
   text-align: right;
   padding-right: 20px;
   font-size: 50px;
-  margin: 10px 0px 10px 0px;
+  margin: var(--pxVar) 0px var(--pxVar) 0px;
 }
-
+/* article section of the page with text */
 .page-section article {
   padding: 0px 150px;
 }
-
-.page-wrapper {
-  display: flex;
-  flex-direction: column;
-}
-
+/* the images in the main content */
 img {
   border-radius: 4px;
   width: 250px;
 }
-
+/* these are the clickable images in the main content */
 .portfolio-item-1 {
      background-image: url(../images/horiseon.PNG);
 }
@@ -118,17 +117,17 @@ img {
 .portfolio-item-5 {
   background-image: url(../images/flexbox-testing.PNG);
 }
-
+/* the main container for the clickable images in the main content */
 .flex-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-
+/* the paragraph elements of the main container */
 .flex-container p {
   font-size: small;
 }
-
+/* each of the elements in the flex container */
 .flex-item {
   display: flex;
   align-items: flex-end;
@@ -136,53 +135,58 @@ img {
   margin: .5em;
   min-height: 150px;
   min-width: 600px;
-  padding: 0 20px 10px 10px;
+  padding: 0 20px var(--pxVar) var(--pxVar);
   background-size: 175%;
   background-repeat: no-repeat;
 }
 
 .flex-item div {
   background-color: aqua;
-  padding: 10px;
+  padding: var(--pxVar);
 }
-
+/* the first work project shown, the first child of the main container */
 .flex-item:first-child {
   min-height: 400px;
   flex-basis: 80%;
 }
-
+/* title of each container child */
 .flex-item h3 {
   font-size: 1.6rem;
   margin-bottom: 20px;
 }
-
+/* the email link displayed on the screen */
 .email {
   text-align: center;
 }
-
+/* this section responsive for smaller screeen (less than 769px)*/
 @media screen and (max-width: 768px) {
+  /* profile image */
+  nav img {
+    padding-top: var(--pxVar);
+  }
+  /* the navgation links */
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: small;
+  }
+  /* the first item in the work section - the first project listed */
   .flex-item:first-child {
     min-height: 150px;
   }
-
+  /* references each of the main sections in the page, eg. About, Work, Resume, Contact, etc */
   .page-section {
     grid-template-columns: 1fr;
   }
-  
+  /* title text of the main sections */
   .page-section h2 {
     text-align: left;
-    margin-left: 10px;
+    margin-left: var(--pxVar);
     border-bottom: 5px solid aqua;
     border-right: 0;
     max-width: 500px;
   }
 
-  .nav-links {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  
 }
 
 
